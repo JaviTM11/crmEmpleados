@@ -1,0 +1,6 @@
+<section class="container">
+    @for (empleado of arrEmpleados; track empleado._id) {
+        <app-card [miEmpleado]="empleado" (deleteEmpleadoEmit)="onDelete($event)"></app-card>
+    }
+
+</section>

@@ -1,0 +1,9 @@
+<article class="card p-3 shadow my-3">
+    <h3>{{miEmpleado?.nombre}} {{miEmpleado?.apellidos}}</h3>
+    <small>{{miEmpleado?.email}}</small>
+    <div class="d-flex mt-3 gap-3">
+        <button class="btn btn-sm btn-success" [routerLink]="['/dashboard', 'empleado', miEmpleado?._id]">Ver detalle</button>
+        <button class="btn btn-sm btn-warning" [routerLink]="['/dashboard', 'update', miEmpleado?._id]">Actualizar</button>
+        <button class="btn btn-sm btn-danger" (click)="deleteEmpleado(miEmpleado?._id)" >Borrar</button>
+    </div>
+</article>

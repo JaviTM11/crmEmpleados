@@ -1,0 +1,19 @@
+<div class="w-50 mx-auto border-5 border-bottom border-danger">
+    <form [formGroup]="loginForm" (ngSubmit)="getDataForm()">
+      <div class="my-2">
+        <label for="email" class="form-label">EMAIL</label>
+        <input class="form-control shadow" type="text" id="email" formControlName="email"
+          placeholder="introduce el email">
+      </div>
+   
+      <div class="my-2">
+        <label for="password" class="form-label">Password</label>
+        <input class="form-control shadow" type="password" id="password" formControlName="password"
+          placeholder="introduce el password">
+      </div>
+
+      <div class="my-2">
+        <input type="submit" value="Enviar" class="btn btn-danger">
+      </div>
+    </form>
+</div>

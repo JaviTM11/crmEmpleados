@@ -1,0 +1,31 @@
+<section>
+    <form [formGroup]="empleadoForm" (ngSubmit)="getDataForm()">
+        <div class="my-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" formControlName="nombre" placeholder="introduce tu nombre" class="form-control">
+        </div>
+        <div class="my-3">
+            <label for="apellidos" class="form-label">Apellidos</label>
+            <input type="text" id="apellidos" formControlName="apellidos" placeholder="introduce tus apellidos" class="form-control">
+        </div>
+        <div class="my-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" formControlName="email" placeholder="introduce tu email" class="form-control">
+        </div>
+        <div class="my-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="text" id="telefono" formControlName="telefono" placeholder="introduce tu teléfono" class="form-control">
+        </div>
+        <div class="my-3">
+            <label for="departamento" class="form-label">Departamento</label>
+            <input type="text" id="departamento" formControlName="departamento" placeholder="introduce tu departamento" class="form-control">
+        </div>
+        <div class="my-3">
+            <label for="salario" class="form-label">Salario</label>
+            <input type="number" id="salario" formControlName="salario" placeholder="introduce tu salario" class="form-control">
+        </div>
+        <div class="my-3">
+            <input type="submit" class="btn btn-danger" value="Enviar">
+        </div>
+    </form>
+</section>
