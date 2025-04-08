@@ -19,33 +19,44 @@ Antes de comenzar, asegúrate de tener instalado:
 
 ## Instalación
 
-  1. Clona este repositorio:
+1. Clona este repositorio:
 
    ```bash
    git clone https://github.com/tu-usuario/crm-empleados.git
    cd crm-empleados
-   
-  2. Instala las dependencias:
+   ```
+
+2. Instala las dependencias:
+
+   ```bash
    npm install
+   ```
 
-Uso
-Servidor de desarrollo
-Para iniciar el servidor de desarrollo, ejecuta:
-  npm start
+3. Inicia el servidor de desarrollo:
 
-Luego, abre tu navegador y navega a http://localhost:4200/.
+   ```bash
+   npm start
+   ```
 
-Construcción
-Para construir el proyecto para producción, ejecuta:
-  npm run build
+   Luego, abre tu navegador y navega a `http://localhost:4200/`.
 
-Los archivos generados estarán en el directorio dist/crm-empleados.
+4. Construye el proyecto para producción:
 
-Pruebas
-Para ejecutar las pruebas unitarias con Karma, usa:
-  npm test
+   ```bash
+   npm run build
+   ```
 
-Estructura del proyecto
+   Los archivos generados estarán en el directorio `dist/crm-empleados`.
+
+5. Ejecuta las pruebas unitarias con Karma:
+
+   ```bash
+   npm test
+   ```
+
+## Estructura del proyecto
+
+```plaintext
 src/
 ├── app/
 │   ├── components/       # Componentes reutilizables
@@ -57,25 +68,49 @@ src/
 ├── assets/               # Recursos estáticos
 ├── styles.css            # Estilos globales
 └── main.ts               # Punto de entrada de la aplicación
+```
 
-Tecnologías utilizadas
-Angular: Framework principal para el desarrollo de la aplicación.
-Bootstrap: Framework CSS para diseño responsivo.
-SweetAlert2: Librería para mostrar alertas personalizadas.
-RxJS: Manejo de programación reactiva.
-Contribuciones
+## Tecnologías utilizadas
+
+- **Angular**: Framework principal para el desarrollo de la aplicación.
+- **Bootstrap**: Framework CSS para diseño responsivo.
+- **SweetAlert2**: Librería para mostrar alertas personalizadas.
+- **RxJS**: Manejo de programación reactiva.
+
+## Contribuciones
+
 ¡Las contribuciones son bienvenidas! Si deseas contribuir, por favor sigue estos pasos:
 
-Haz un fork del repositorio.
-Crea una rama para tu funcionalidad (git checkout -b feature/nueva-funcionalidad).
-Realiza tus cambios y haz commit (git commit -m 'Añadir nueva funcionalidad').
-Sube tus cambios (git push origin feature/nueva-funcionalidad).
-Abre un Pull Request.
+1. Haz un fork del repositorio:
 
-##Contacto
+   ```bash
+   git fork
+   ```
+
+2. Crea una rama para tu funcionalidad:
+
+   ```bash
+   git checkout -b feature/nueva-funcionalidad
+   ```
+
+3. Realiza tus cambios y haz commit:
+
+   ```bash
+   git commit -m 'Añadir nueva funcionalidad'
+   ```
+
+4. Sube tus cambios:
+
+   ```bash
+   git push origin feature/nueva-funcionalidad
+   ```
+
+5. Abre un Pull Request.
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+## Contacto
+
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de jtainio.2b@gmail.com
-
-
-
-
-
