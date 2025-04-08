@@ -1,59 +1,81 @@
-# CrmEmpleados
+# CRM Empleados
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+Este proyecto es una aplicación web desarrollada con Angular que permite gestionar empleados en una empresa. Incluye funcionalidades como autenticación, listado de empleados, creación, actualización y eliminación de empleados.
 
-## Development server
+## Características
 
-To start a local development server, run:
+- **Autenticación**: Inicio de sesión con validación de credenciales.
+- **Gestión de empleados**: Crear, listar, actualizar y eliminar empleados.
+- **Interfaz moderna**: Uso de Bootstrap para un diseño responsivo y atractivo.
+- **Protección de rutas**: Implementación de guardas para proteger rutas específicas.
+- **Interceptors**: Añade automáticamente el token de autenticación a las solicitudes HTTP.
 
-```bash
-ng serve
-```
+## Requisitos previos
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Antes de comenzar, asegúrate de tener instalado:
 
-## Code scaffolding
+- [Node.js](https://nodejs.org/) (versión 16 o superior)
+- [Angular CLI](https://angular.io/cli) (versión 19.2.4 o superior)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Instalación
 
-```bash
-ng generate component component-name
-```
+  1. Clona este repositorio:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+   ```bash
+   git clone https://github.com/tu-usuario/crm-empleados.git
+   cd crm-empleados
+   
+  2. Instala las dependencias:
+   npm install
 
-```bash
-ng generate --help
-```
+Uso
+Servidor de desarrollo
+Para iniciar el servidor de desarrollo, ejecuta:
+  npm start
 
-## Building
+Luego, abre tu navegador y navega a http://localhost:4200/.
 
-To build the project run:
+Construcción
+Para construir el proyecto para producción, ejecuta:
+  npm run build
 
-```bash
-ng build
-```
+Los archivos generados estarán en el directorio dist/crm-empleados.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Pruebas
+Para ejecutar las pruebas unitarias con Karma, usa:
+  npm test
 
-## Running unit tests
+Estructura del proyecto
+src/
+├── app/
+│   ├── components/       # Componentes reutilizables
+│   ├── guards/           # Guardas de rutas
+│   ├── interfaces/       # Interfaces de datos
+│   ├── pages/            # Páginas principales
+│   ├── services/         # Servicios para la lógica de negocio
+│   └── app.routes.ts     # Configuración de rutas
+├── assets/               # Recursos estáticos
+├── styles.css            # Estilos globales
+└── main.ts               # Punto de entrada de la aplicación
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Tecnologías utilizadas
+Angular: Framework principal para el desarrollo de la aplicación.
+Bootstrap: Framework CSS para diseño responsivo.
+SweetAlert2: Librería para mostrar alertas personalizadas.
+RxJS: Manejo de programación reactiva.
+Contribuciones
+¡Las contribuciones son bienvenidas! Si deseas contribuir, por favor sigue estos pasos:
 
-```bash
-ng test
-```
+Haz un fork del repositorio.
+Crea una rama para tu funcionalidad (git checkout -b feature/nueva-funcionalidad).
+Realiza tus cambios y haz commit (git commit -m 'Añadir nueva funcionalidad').
+Sube tus cambios (git push origin feature/nueva-funcionalidad).
+Abre un Pull Request.
 
-## Running end-to-end tests
+##Contacto
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de jtainio.2b@gmail.com
 
-For end-to-end (e2e) testing, run:
 
-```bash
-ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
